@@ -13,4 +13,4 @@ export const LIKED = {
   GET_LIKED_LENGTH: "GET_LIKED_LENGTH",
 };
 
-export const JSON_API_PRODUCTS = "https://kinozone01.herokuapp.com/productsgi";
+export const JSON_API_PRODUCTS = "https://kinozone01.herokuapp.com/products";
