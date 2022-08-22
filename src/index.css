@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 10vw;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 34px;
+  width: 5vw;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: gray;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(5vw);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.burger {
+  display: none;
+}
+.burger__menu {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  height: 40vh !important;
+  padding-left: 10px;
+  width: 20% !important;
+}
+.menu-item {
+  color: white;
+  text-decoration: none;
+}
+.bm-item-list {
+  height: 20vh !important;
+}
+.bm-item {
+  margin: 10px 0 !important;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.bm-overlay {
+  background: none !important;
+}
+.Cart__img {
+  width: 100% !important;
+}
+.Cart__img_img {
+  width: 50% !important;
+}
+.css-ehv33m-MuiPaper-root-MuiCard-root {
+  width: 30% !important;
+}
+@media (max-width: 767px) {
+  .register {
+    display: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .cart {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .Navbar__btn {
+    display: none !important;
+  }
+  .css-1628h99 {
+    flex-direction: column !important;
+  }
+  .List__movie {
+    display: block !important;
+  }
+  .Card {
+    width: 90% !important;
+  }
+}

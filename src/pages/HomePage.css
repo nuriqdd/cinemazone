@@ -1,0 +1,8 @@
+.body {
+  background-image: url(https://wallpaperaccess.com/full/1987321.jpg) !important;
+}
+@media (max-width: 767px) {
+  .main-box {
+    display: none;
+  }
+}
